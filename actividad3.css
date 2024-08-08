@@ -1,0 +1,14 @@
+#field {
+    height: 100px;
+    border-bottom: 3px black groove;
+    position: relative;
+  }
+  
+  #ball {
+    position: absolute;
+    cursor: pointer;
+  }
+
+  progress {
+    width: 5%;
+  }

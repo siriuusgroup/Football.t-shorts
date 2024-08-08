@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football t-shorts</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./img/camisetas.ico" type="ico">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/camisetas.ico" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="./index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="./camisetas.html">Camisetas</a></li>
+                <li><a href="./retro.html">Camisetas retro</li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <div id="carrito-icon" onclick="toggleCart()">
+                  🛒
+                  <span id="cart-count">0</span>
+              </div>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="conteiner">
+        <h2>Las mejores camisetas retro</h2>
+    </section>
+
+<section class="featured-products">
+    <div id="productos">
+        <div class="producto">
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="./img/retro.png">
+                <h3>Retro </h3>
+                <h3>Boca Junior</h3>
+                <p>$100,000</p>
+                <button class="buy-button" onclick="addToCart('Retro: Boca Junior', 100000)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro2.png" >
+                <h3>Retro</h3> 
+                <h3>River Plate</h3>
+                <p>$150.0000</p>
+                <button class="buy-button" onclick="addToCart('Retro: River Plate', 150000)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro3.png">
+                <h3>Retro</h3>
+                <h3>Gimmasia de La Plata</h3>
+                <p>$270,000</p>
+                <button class="buy-button" onclick="addToCart('Retro: Gimnasia de La Plata', 270000)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro4.jpg" alt=>
+                <h3>Retro </h3>
+                <h3>Rosario Central</h3>
+                <p>$199,999</p>
+                <button class="buy-button" onclick="addToCart('Retro: Rosario Central', 199999)">Comprar</button>
+            </div>
+             <div class="product-card">
+                <img src="./img/retro5.png">
+                <h3>Retro 
+                <h3>Real Madrid</h3>
+                <p>$195,000</p>
+                <button class="buy-button" onclick="addToCart('Retro: Real Madrid', 195000)">Comprar</button>
+            </div>
+            <div class="product-card"> 
+                <img src="./img/retro6.jpg">
+                <h3>Retro</h3>
+                <h3>Barselona</h3>
+                <p>$200,900</p>
+                <button class="buy-button" onclick="addToCart('Retro: Barselona', 200900)">Comprar</button>
+            </div> 
+            <div class="product-card">
+                <img src="./img/retro7.jpg">
+                <h3>Retro</h3> 
+                <h3>Portugal</h3>
+                <p>$240,500</p>
+                <button class="buy-button" onclick="addToCart('Retro: Portugal', 240500)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro8.png">
+                <h3>Retro</h3>
+                <h3>Talleres de Cordoba</h3>
+                <p>$270,900</p>
+                <button class="buy-button" onclick="addToCart('Retro: Talleres de Cordoba', 270900)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro9.png">
+                <h3>Retro</h3>
+                <h3>Belgrano de Cordoba</h3>
+                <p>$280,450</p>
+                <button class="buy-button" onclick="addToCart('Retro: Belgrano de Cordoba', 280450)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro10.jpg">
+                <h3>Retro</h3>
+                <h3>San Lorenzo</h3>
+                <p>$300,890</p>
+                <button class="buy-button" onclick="addToCart('Retro: San Lorenzo', 300000)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/retro11.jpg" >
+                <h3>Retro</h3>
+                <h3>Estudiantes de La Plata</h3>
+                <p>$250,000</p>
+                <button class="buy-button" onclick="addToCart('Retro: Estudiantes de La Plata', 250000)">Comprar</button>
+            </div>
+            <div class="product-card">
+                <img src="./img/camiseta12.png">
+                <h3>Retro</h3>
+                <h3>River PLate</h3>
+                <p>$265,550</p>
+                <button class="buy-button" onclick="addToCart('Retro: River Plate', 265550)">Comprar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+              <!-- Carrito  -->
+              <div id="cart-popup" class="ventana">
+                <div class="ventana-cont">
+                    <h2>Carrito de Compras</h2>
+                    <ul id="carrito">
+                        <!-- Los productos del carrito se agregarán aquí -->
+                    </ul>
+                    <p id="total">Total: $0</p>
+                    <button id="vaciar-carrito" onclick="vaciarCarrito()">Vaciar Carrito</button>
+                    <button onclick="toggleCart()">Cerrar</button>
+                </div>
+            </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Tienda de Ropa. Todos los derechos reservados.</p>
+            <ul>
+                <li><a href="#">Política de Privacidad</a></li>
+                <li><a href="#">Términos y Condiciones</a></li>
+                <li><a href="./juego/juego.html"> Juego</a></li>
+                <li><a href="https://siriuusgroup.github.io/proyecto-vainilla/">Colores</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
